@@ -8,7 +8,6 @@ html{
 }
 body{
   height: calc(100vh - 8em);
-  padding: 4em;
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
@@ -26,6 +25,12 @@ body{
     transform: translateY(-50%);    
 }
 
+.container{
+  position: relative;
+  top:50%;
+}
+
+
 /* Animation */
 .anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
@@ -33,7 +38,7 @@ body{
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 22em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
