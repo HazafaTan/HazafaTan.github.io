@@ -4,9 +4,37 @@
 /* Global */
 html{
   min-height: 100%;
-  overflow: hidden;
+  overflow: scroll;
+
+}
+.arrowimg{
+  width: 25px;
+  height: auto;
+
 }
 body{
+  position: relative;
+
+}
+.card {
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+.card-title {
+  font-weight: bold;
+}
+.card img {
+  width: 30%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+
+
+
+.frontbody{
   height: calc(100vh - 8em);
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
